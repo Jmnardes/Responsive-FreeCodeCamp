@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id='title'>form</h1>
+    <p id='description'>Just a description for this form</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="name here" required>
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="email here" required>
+
+        <label for="number" id="number-label">Number (between 1 and 100)</label>
+        <input type='number' id="number" min='1' max='100' placeholder="number here" required>
+
+        <select id="dropdown">
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+        </select>
+
+        <p>radio list</p>
+        <label for="radio1">
+            <input name='radio' type="radio" value='first value'>
+            first
+        </label>
+        <label for="radio2">
+            <input name='radio' type="radio" value='second value'>
+            second
+        </label>
+        <label for="radio3">
+            <input name='radio' type="radio" value='third value'>
+            third
+        </label>
+
+        <p>checkboxes</p>
+        <input name='check1' type="checkbox" value='first value'>
+        <label for="check1">1</label>
+        <input name='check2' type="checkbox" value='second value'>
+        <label for="check2">2</label>
+        <input name='check3' type="checkbox" value='third value'>
+        <label for="check3">3</label>
+
+        <button type='submit'>send</button>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>
